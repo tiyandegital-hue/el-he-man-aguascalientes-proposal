@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://el-he-man-aguascalientes-proposal.vercel.app/sitemap.xml

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnóstico y Cotización | Taller Mecánico El He Man</title><meta name="description" content="Pide tu cotización gratuita en 60 segundos: describe el síntoma de tu auto y agenda tu cita en el Taller Mecánico El He Man, Aguascalientes.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head><body><header class="site"><div class="header-in">
+<a class="logo" href="../"><svg class="logo-mark" viewBox="0 0 48 48" role="img" aria-label="Emblema del taller"><rect width="48" height="48" fill="#D7263D"/><circle cx="24" cy="24" r="16" fill="none" stroke="#F7F2E9" stroke-width="2.5"/><path d="M17 30 L27 18 M27 18 l4-3 M27 18 l-1 5" stroke="#F7F2E9" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="30" cy="16" r="3.4" fill="#F7F2E9"/></svg><span class="logo-txt">Taller El He Man<small>Solo con cita previa &middot; Aguascalientes, Ags.</small></span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav-principal">MEN&Uacute; &#9776;</button>
+<nav class="main" id="nav-principal" aria-label="Navegaci&oacute;n principal"><ul><li><a href="../">Inicio</a></li><li><a href="../servicios/">Servicios</a></li><li><a href="../cotizacion/" aria-current="page">Cotización</a></li><li><a href="../nosotros/">Nosotros</a></li><li><a href="../contacto/">Contacto</a></li></ul></nav>
+<div class="header-cta"><a class="header-phone" href="tel:+524494378005">+52 449 437 8005</a><a class="btn" href="../cotizacion/">Cotizaci&oacute;n gratuita</a></div>
+</div></header><main><section><div class="wrap">
+<p class="eyebrow">Orden de trabajo &middot; Aguascalientes, Ags. &middot; Recepción abierta para citas programadas</p>
+<h1 style="font-size:clamp(2.6rem,6.4vw,4.4rem);color:var(--green)">Pide tu cotización gratuita en 60 segundos</h1>
+<p class="lede" style="margin-top:16px">Ningún trabajo importante sin hablar contigo primero. Dinos qué síntoma tiene tu vehículo y te contactamos para confirmar tu cita y darte la cotización antes de cualquier trabajo.</p>
+<div class="contact-grid" style="margin-top:36px">
+<div class="workorder">
+<form id="quote-form" novalidate>
+<fieldset><legend>1. Ficha del vehículo a revisar</legend>
+<div class="grid2">
+<div class="field"><label for="q-marca">Marca <span class="req">*</span></label><input id="q-marca" name="marca" required autocomplete="off"></div>
+<div class="field"><label for="q-modelo">Modelo / submarca <span class="req">*</span></label><input id="q-modelo" name="modelo" required autocomplete="off"></div>
+<div class="field"><label for="q-ano">Año modelo</label><input id="q-ano" name="ano" type="number" min="1950" max="2026" inputmode="numeric"></div>
+<div class="field"><label for="q-km">Kilometraje aprox.</label><input id="q-km" name="kilometraje" inputmode="numeric" autocomplete="off"></div>
+</div>
+<div class="field" style="margin-top:16px"><label for="servicio-interes">Servicio de interés</label><select id="servicio-interes" name="servicio"><option value="">Selecciona un servicio (opcional)</option><option value="diagnostico">Diagnóstico y revisión general</option><option value="rutina">Servicios de rutina y afinación</option><option value="frenos">Frenos</option><option value="motor">Motor y transmisión</option><option value="suspension">Suspensión y dirección</option><option value="llantas">Llantas y alineación</option><option value="electrico">Sistema eléctrico y parabrisas</option><option value="restauracion">Proyectos de restauración</option></select></div>
+</fieldset>
+<fieldset><legend>2. Registro de síntomas detectados</legend>
+<p class="form-label" style="color:var(--ink);font-weight:400;text-transform:none;letter-spacing:0">Selecciona uno o varios. Haz clic en las anomalías que manifiesta tu coche para preparar el equipo de diagnóstico.</p>
+<div class="chips"><span class="chip"><input type="checkbox" id="sym-ruido" name="sintoma" value="ruido"><label for="sym-ruido">Ruido al rodar o frenar<small>Chirridos, rechinidos o golpeteo en baches</small></label></span><span class="chip"><input type="checkbox" id="sym-check-engine" name="sintoma" value="check-engine"><label for="sym-check-engine">Testigo de motor encendido<small>Luz encendida en el tablero o parpadeo</small></label></span><span class="chip"><input type="checkbox" id="sym-potencia" name="sintoma" value="potencia"><label for="sym-potencia">Pérdida de potencia o jaloneos<small>No acelera con normalidad o se atraganta</small></label></span><span class="chip"><input type="checkbox" id="sym-fuga" name="sintoma" value="fuga"><label for="sym-fuga">Fuga de líquidos<small>Manchas de aceite, anticongelante o líquido de frenos</small></label></span><span class="chip"><input type="checkbox" id="sym-direccion" name="sintoma" value="direccion"><label for="sym-direccion">Dirección dura o vibración<small>Volante desalineado o tiembla al rodar</small></label></span><span class="chip"><input type="checkbox" id="sym-preventivo" name="sintoma" value="preventivo"><label for="sym-preventivo">Servicio preventivo / afinación<small>Cambio de aceite, filtros y revisión general</small></label></span><span class="chip"><input type="checkbox" id="sym-electrico" name="sintoma" value="electrico"><label for="sym-electrico">Eléctrico / batería / marcha<small>Dificultad para encender o fallas eléctricas</small></label></span><span class="chip"><input type="checkbox" id="sym-otro" name="sintoma" value="otro"><label for="sym-otro">Otro síntoma o revisión general<small>Inspección de compraventa o falla no listada</small></label></span></div></fieldset>
+<fieldset><legend>3. Notas del propietario</legend>
+<div class="field"><label for="q-notas">Cuéntanos con tus propias palabras qué notas en el auto</label><textarea id="q-notas" name="notas" rows="4"></textarea></div>
+<p class="note">Entre más detalle nos des, más certero será nuestro estimado previo a tu llegada.</p></fieldset>
+<fieldset><legend>4. Datos para notificarte la estimación</legend>
+<div class="grid2">
+<div class="field"><label for="q-nombre">Nombre completo <span class="req">*</span></label><input id="q-nombre" name="nombre" required autocomplete="name"></div>
+<div class="field"><label for="q-tel">Teléfono celular <span class="req">*</span></label><input id="q-tel" name="telefono" type="tel" required autocomplete="tel"></div>
+</div>
+<div class="field" style="margin-top:16px"><label for="q-email">Correo electrónico</label><input id="q-email" name="email" type="email" autocomplete="email"></div>
+</fieldset>
+<fieldset><legend>5. Modalidad deseada</legend>
+<div class="radio-row">
+<label class="radio"><input type="radio" name="modalidad" value="cita" checked> Agendar cita en Mariano Escobedo #121 &mdash; llevar el coche directamente al taller, previa confirmación telefónica del horario.</label>
+<label class="radio"><input type="radio" name="modalidad" value="telefono"> Estimación previa por teléfono &mdash; primero un estimado preliminar de costo antes de agendar.</label>
+<label class="radio"><input type="radio" name="modalidad" value="correo"> Estimación previa por correo electrónico &mdash; recibir la cotización por email.</label>
+</div></fieldset>
+<button class="btn" type="submit">Enviar solicitud de cotización gratuita</button>
+<p class="note">Tus datos no se comparten con terceros. No iniciamos ninguna reparación ni cobro sin tu autorización. Este formulario es una demostración: no envía datos a ningún servidor.</p>
+</form>
+<div class="confirm" role="status"><h3>Solicitud recibida &mdash; demostración</h3><p id="quote-summary">Recibimos tu solicitud. Te contactaremos por teléfono o correo para confirmar tu cita y darte la cotización antes de cualquier trabajo.</p><p style="margin-top:10px">En el sitio final, esta solicitud llegaría directamente al taller por correo electrónico.</p></div>
+</div>
+<aside>
+<div class="contact-card">
+<h3>Protocolo del taller</h3>
+<p style="margin-top:10px">Inspección visual y mecánica en el taller, con herramienta especializada. Solo con cita previa, para darle a cada auto su tiempo.</p>
+<h3 style="margin-top:26px">&iquest;Qu&eacute; pasa tras enviar esto?</h3>
+<dl><dt>1 &middot; Revisión de síntomas</dt><dd>Evaluamos la severidad técnica y el lugar disponible.</dd>
+<dt>2 &middot; Llamada de confirmación</dt><dd>Te marcamos para darte un rango preliminar de costo y fijar tu hora de llegada.</dd>
+<dt>3 &middot; Diagnóstico en el taller</dt><dd>Revisión física directa. Te mostramos la pieza gastada y apruebas el presupuesto final antes de que se haga el trabajo.</dd></dl>
+<p style="margin-top:22px"><a class="btn" href="tel:+524494378005">Llamar directo al +52 449 437 8005</a></p>
+<p class="mono" style="margin-top:16px">Trato directo de barrio &mdash; sin intermediarios</p>
+</div>
+</aside></div>
+</div></section>
+
+<section style="background:#fff;border-top:3px solid var(--green)"><div class="wrap">
+<p class="eyebrow">Dudas frecuentes</p><h2>Preguntas antes de traer tu auto</h2>
+<p class="lede" style="margin-top:12px">Claridad total antes de entrar al taller.</p>
+<div class="faq" style="margin-top:28px">
+<div class="faq-item"><button class="faq-q" aria-expanded="false">&iquest;Cobran por la cotización inicial?<span class="plus">+</span></button><div class="faq-a"><p>No. La consulta y el cálculo de presupuesto son gratuitos. Si el auto requiere desarmar partes complejas para un dictamen interno, te informamos el costo antes de hacerlo, y tú decides.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">&iquest;Tengo que dejar mi auto todo el día?<span class="plus">+</span></button><div class="faq-a"><p>Trabajamos bajo cita previa para evitar que tu automóvil se quede estacionado sin atención. Los servicios de rutina y frenos suelen salir el mismo día; los tiempos exactos se confirman al agendar, según el trabajo.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">&iquest;Qu&eacute; pasa si encuentran otra falla?<span class="plus">+</span></button><div class="faq-a"><p>No hacemos nada sin tu sí. Si durante la revisión detectamos otra falla, te avisamos por teléfono, te explicamos qué es y cuánto costaría, y solo se hace si tú lo apruebas.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">&iquest;Necesito cita para venir?<span class="plus">+</span></button><div class="faq-a"><p>Sí. Atendemos exclusivamente con cita previa. Agenda por teléfono o con el formulario de esta página y te confirmamos el horario.</p></div></div>
+</div></div></section>
+
+<section><div class="wrap reveal">
+<p class="eyebrow">Ubicación del taller</p><h3 style="font-size:1.8rem">Mariano Escobedo #121, Aguascalientes, Ags.</h3>
+<p style="margin-top:10px">C.P. 20264 &middot; Estacionamiento y acceso para sillas de ruedas disponible. Horario a confirmar con el taller al agendar tu cita.</p>
+<p style="margin-top:16px"><a class="btn green" href="https://www.google.com/maps/search/?api=1&query=Mariano+Escobedo+121+Aguascalientes+Ags+20264" target="_blank" rel="noopener">Abrir en Google Maps</a> <a class="btn ghost" href="tel:+524494378005">Llamar al taller</a></p>
+</div></section></main><footer class="site"><div class="wrap"><div class="foot-grid">
+<div><h3>Taller Mec&aacute;nico El He Man</h3><p class="mono">Mec&aacute;nica automotriz honesta en Aguascalientes.</p>
+<p style="margin-top:12px">Aqu&iacute; no hay estafas. Ning&uacute;n trabajo importante sin hablar contigo primero.</p>
+<p class="mono" style="margin-top:14px">Solo con cita previa &middot; Horario a confirmar con el taller<br>Cobertura: Todo Aguascalientes</p></div>
+<div><h3>Datos del taller</h3><ul>
+<li><span class="mono">Direcci&oacute;n:</span><br>Mariano Escobedo #121, Aguascalientes, Ags. 20264</li>
+<li><span class="mono">Tel&eacute;fono:</span><br><a href="tel:+524494378005">+52 449 437 8005</a></li>
+<li><span class="mono">Correo:</span><br><a href="mailto:sanchezdelacruzjosedejesus74@gmail.com">sanchezdelacruzjosedejesus74@gmail.com</a></li></ul></div>
+<div><h3>Navegaci&oacute;n</h3><ul>
+<li><a href="../">Inicio</a></li><li><a href="../servicios/">Servicios</a></li><li><a href="../cotizacion/">Cotizaci&oacute;n</a></li>
+<li><a href="../nosotros/">Nosotros</a></li><li><a href="../contacto/">Contacto</a></li><li><a href="../aviso-legal/">Aviso Legal</a></li></ul>
+<p class="mono" style="margin-top:14px">Acceso para sillas de ruedas &middot; Estacionamiento &middot; Wi-Fi &middot; Bicis</p></div>
+</div><div class="foot-bottom"><span>&copy; 2026 Taller Mec&aacute;nico El He Man &middot; Mariano Escobedo #121, Aguascalientes, Ags. 20264</span><span>Atenci&oacute;n exclusivamente bajo cita previa</span><a href="../aviso-legal/">Aviso Legal</a></div>
+</div></footer>
+<script src="../assets/js/main.js"></script></body></html>
